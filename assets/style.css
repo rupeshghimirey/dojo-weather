@@ -60,7 +60,8 @@ hr{
     height: 205px;
     width: 205px;
     border-radius: 50%;
-    margin: 30px;
+    margin: 25px;
+    padding: 5px;
     align-self: center;
 }
 select {
