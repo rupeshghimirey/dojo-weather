@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dojo Weather</title>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="container space-between">
+            <h2 class="white-text">Dojo Weather</h2>
+            <ul class="cities-name space-between white-text">
+                <li onclick=alert(alertWeather())>Burbank</li>
+                <li onclick=alert(alertWeather())>Chicago</li>
+                <li onclick=alert(alertWeather())>Dallas</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sanjose-bar space-between">
+            <h2>San Jose</h2>
+            <div class="show-temp">
+                <p>show temperature in</p>
+                <select onchange="toFahrenheight()" name="" id="">
+                    <option value="">&#176 C
+                        
+                    </option>
+                    <option  value="">&#176 F
+                    </option>
+                </select>
+            </div>
+
+        </div>
+        <div>
+            <hr>
+        </div>
+        <div class="weather-forecast">
+            <div class="day-weather">
+                <h2>Today</h2>
+                <img src="./some_rain.png" alt="some rain">
+                <p>some rain</p>
+                <div class="two-temp">
+                    <h3 class="red-text"><span id="degree-celsius1">24</span> &#176 </h3>
+                    <h3 class="blue-text"><span id="degree-celsius2">18</span> &#176</h3>
+                </div>
+            </div>
+            <div class="day-weather">
+                <h2>Tomorrow</h2>
+                <img src="./some_sun.png" alt="some sun">
+                <p>some rain</p>
+                <div class="two-temp">
+                    <h3 class="red-text"><span id="degree-celsius3">27</span> &#176 </h3>
+                    <h3 class="blue-text"><span id="degree-celsius4">19</span> &#176</h3>
+                </div>
+
+            </div>
+            <div class="day-weather">
+                <h2>Friday</h2>
+                <img src="./some_clouds.png" alt="some clouds">
+                <p>some rain</p>
+                <div class="two-temp">
+                    <h3 class="red-text"><span id="degree-celsius5">21</span> &#176 </h3>
+                    <h3 class="blue-text"><span id="degree-celsius6">16</span> &#176</h3>
+                </div>
+
+            </div>
+            <div class="day-weather">
+                <h2>Saturday</h2>
+                <img src="./some_sun.png" alt="some sun">
+                <p>some rain</p>
+                <div class="two-temp">
+                    <h3 class="red-text"><span id="degree-celsius7">26</span> &#176 </h3>
+                    <h3 class="blue-text"><span id="degree-celsius8">21</span> &#176</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <div id = "cookie-policy" class="cookie-policy">
+            <h2>Stop! Cookie time</h2>
+            <div class="cookie-image-bar">
+                <img src="./cookie.png" alt="cookie image">
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, 
+                to provide school media features amd to analyse out traffic.<a href="">Read
+                more</a></p>
+                <div class="button">
+                    <button onclick="removeCookiepolicy(cookieBar)" class="accept-button">I Accept</button>  
+                </div>     
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
